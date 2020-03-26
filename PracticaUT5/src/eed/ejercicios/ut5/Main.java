@@ -21,12 +21,10 @@ public class Main {
         
         miCuenta = new Account("Pepa Santana","3333-1111-99-123456789");
         
- 
-        
         try
         {
             System.out.println("Ingreso en cuenta");
-            miCuenta.ingresar(-1695);
+            miCuenta.ingresar(1695);
         } catch (Exception e)
         {
             System.err.println(e.getMessage());

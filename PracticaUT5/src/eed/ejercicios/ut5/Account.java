@@ -15,7 +15,7 @@ public class Account {
     // Atributos de la clase Account
     String titular;
     String ccc;
-    double balance = 0;
+    private double balance = 0;
 
  
     // Constructor

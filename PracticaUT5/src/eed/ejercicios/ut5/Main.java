@@ -35,7 +35,7 @@ public class Main {
         
         try 
         {
-            miCuenta.retirar(-10);
+            miCuenta.retirar(-100);
         } catch (Exception e)
         {
             System.err.println(e.getMessage());

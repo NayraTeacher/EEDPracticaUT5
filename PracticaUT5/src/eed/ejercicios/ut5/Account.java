@@ -12,10 +12,31 @@ package eed.ejercicios.ut5;
 public class Account {
 
 
-    // Atributos de la clase Account
-    String titular;
-    String ccc;
-    double balance = 0;
+    public String getTitular() {
+		return titular;
+	}
+
+
+	public void setTitular(String titular) {
+		this.titular = titular;
+	}
+
+
+	public String getCcc() {
+		return ccc;
+	}
+
+
+	public void setCcc(String ccc) {
+		this.ccc = ccc;
+	}
+
+
+
+	// Atributos de la clase Account
+    private String titular;
+    private String ccc;
+    private double balance = 0;
 
  
     // Constructor
@@ -32,7 +53,7 @@ public class Account {
         return balance;
     }
 
-    /* Método para ingresar cantidades en la cuenta. Modifica el saldo.
+    /** Metodo para ingresar cantidades en la cuenta. Modifica el saldo.
        */
     public void ingresar(double cantidad) throws Exception
     {
@@ -43,7 +64,7 @@ public class Account {
 
 
 
-    /* Metodo para retirar cantidades en la cuenta. Modifica el saldo.
+    /** Metodo para retirar cantidades en la cuenta. Modifica el saldo.
      */
     public void retirar(double cantidad) throws Exception
     {

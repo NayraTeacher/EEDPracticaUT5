@@ -16,15 +16,15 @@ public class Main {
      */
     public static void main(String[] args) {
     	
-        Account miCuenta;
+        Account cuentita;
         double saldo;
         
-        miCuenta = new Account("Pepa Santana","3333-1111-99-123456789");
+        cuentita = new Account("Pepa Santana","3333-1111-99-123456789");
         
         try
         {
             System.out.println("Ingreso en cuenta");
-            miCuenta.ingresar(1695);
+            cuentita.ingresar(-1695);
         } catch (Exception e)
         {
             System.err.println(e.getMessage());
@@ -33,7 +33,7 @@ public class Main {
         
         try 
         {
-            miCuenta.retirar(-100);
+            cuentita.retirar(-100);
         } catch (Exception e)
         {
             System.err.println(e.getMessage());
@@ -43,14 +43,14 @@ public class Main {
         try
         {
             System.out.println("Ingreso en cuenta");
-            miCuenta.ingresar(300);
+            cuentita.ingresar(300);
         } catch (Exception e)
         {
             System.err.println(e.getMessage());
             System.out.println("Fallo al ingresar");
         } 
         
-        saldo = miCuenta.disponible();
+        saldo = cuentita.disponible();
         System.out.println("El saldo actual es "+ saldo );
     }
 

@@ -64,7 +64,12 @@ public class Account {
 
 
 
-    /** Metodo para retirar cantidades en la cuenta. Modifica el saldo.
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+
+
+	/** Metodo para retirar cantidades en la cuenta. Modifica el saldo.
      */
     public void retirar(double cantidad) throws Exception
     {

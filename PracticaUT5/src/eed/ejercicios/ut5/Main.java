@@ -20,11 +20,14 @@ public class Main {
         double saldo;
         
         cuentita = new Account("Pepa Santana","3333-1111-99-123456789");
+        Account nueva = new Account("Nayra", "2222-1111-33-444444444");
         
         try
         {
-            System.out.println("Ingreso en cuenta");
+            System.out.println("Ingreso en las dos cuentas");
             cuentita.ingresar(-1695);
+            nueva.ingresar(300);
+            
         } catch (Exception e)
         {
             System.err.println(e.getMessage());

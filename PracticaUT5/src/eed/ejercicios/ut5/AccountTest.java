@@ -15,8 +15,11 @@ class AccountTest {
 	}
 
 	@Test
-	void testRetirar() {
-		fail("Not yet implemented");
+	void testRetirar() throws Exception{
+		Account cuenta = new Account("prueba", "1234567890");
+		cuenta.setBalance(600);
+		cuenta.retirar(200);
+		assertEquals(400.00, cuenta.disponible());
 	}
 
 }

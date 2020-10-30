@@ -26,6 +26,18 @@ public class Main {
         try
         {
             System.out.println("Ingreso en las dos cuentas");
+            cuentita.ingresar(2000);
+            nueva.ingresar(2000);
+            
+        } catch (Exception e)
+        {
+            System.err.println(e.getMessage());
+            System.out.println("Fallo al ingresar");
+        } 
+        
+        try
+        {
+            System.out.println("Ingreso en las dos cuentas");
             cuentita.ingresar(-1695);
             nueva.ingresar(300);
             

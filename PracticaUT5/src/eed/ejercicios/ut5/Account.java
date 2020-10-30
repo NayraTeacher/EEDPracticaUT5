@@ -6,12 +6,14 @@
 package eed.ejercicios.ut5;
 
 /**
- *
+ * Esta clase sirve para...
  * @author Nayra Deniz
+ * @version 1.0.1
+ * 
  */
 public class Account {
 
-
+	
     public String getTitular() {
 		return titular;
 	}
@@ -54,7 +56,10 @@ public class Account {
     }
 
     /** Metodo para ingresar cantidades en la cuenta. Modifica el saldo.
-       */
+     * Lanza una excepcion cuando intentas retirar un importe negativo
+     * @params cantidad: importe a ingresar con dos decimales
+     * @throws Exception
+     */
     public void ingresar(double cantidad) throws Exception
     {
         if (cantidad<0)

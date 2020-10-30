@@ -7,7 +7,8 @@ import org.junit.jupiter.api.Test;
 class AccountTest {
 
 	@Test
-	void testIngresar() throws Exception {
+	//Test ingresar en cuenta prueba, 1234567890, 200 euros
+	void testIngresar() throws Exception {		
 		Account cuenta = new Account("prueba", "1234567890");
 		cuenta.setBalance(100);
 		cuenta.ingresar(200);
